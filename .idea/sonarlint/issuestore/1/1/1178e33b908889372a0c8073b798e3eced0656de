@@ -1,0 +1,8 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ó­ª÷
+‰
+java:S4144J"lUpdate this method so that its implementation is not identical to "insufficientBalanceException" on line 22.(±¹ôç8ÅÀ¿¾Õ2
+
+java:S41440"kUpdate this method so that its implementation is not identical to "notFoundMovimientoException" on line 35.(Å€ŞØúÿÿÿÿ8ìÎÅºÕ2
+
+java:S4144="kUpdate this method so that its implementation is not identical to "notFoundMovimientoException" on line 35.(›ß©·üÿÿÿÿ8ãù§¾Õ2

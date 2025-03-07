@@ -1,0 +1,455 @@
+{
+	"info": {
+		"_postman_id": "e42b636a-a2d0-4dd3-bb82-e31e88ff98fa",
+		"name": "Reto-Tecnico",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13879457"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Get Clientes",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portClientes}}/clientes",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portClientes}}",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cliente by clienteId",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portClientes}}/clientes/1",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portClientes}}",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Cliente",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"contrasenia\": \"56151\",\r\n        \"identificacion\": 87923,\r\n        \"nombre\": \"Aldo Carrillo\",\r\n        \"genero\": \"Masculino\",\r\n        \"edad\": 28,\r\n        \"direccion\": \"Villaflora\",\r\n        \"telefono\": \"0965874523\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}:{{portClientes}}/clientes",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portClientes}}",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Cliente by clienteId",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"contrasenia\": \"56151\",\r\n        \"identificacion\": 87923,\r\n        \"nombre\": \"Aldo Carrillo\",\r\n        \"genero\": \"Masculino\",\r\n        \"edad\": 28,\r\n        \"direccion\": \"Villaflora\",\r\n        \"telefono\": \"0965874523\",\r\n        \"estado\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}:{{portClientes}}/clientes/1",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portClientes}}",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cliente by clienteId",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portClientes}}/clientes/1",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portClientes}}",
+							"path": [
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "Get Cuentas",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get cuentas by numeroCuenta",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/cuentas/85635",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"cuentas",
+								"85635"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Cuentas",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": 585545,\r\n    \"tipoCuenta\": \"Corriente\",\r\n    \"saldoInicial\": 1000,\r\n    \"cliente\": \"Jose Lema\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/cuentas",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Cuentas by numeroCuenta",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCuenta\": 85635,\r\n    \"tipoCuenta\": \"Corriente\",\r\n    \"saldoInicial\": 2000.0,\r\n    \"estado\": true,\r\n    \"cliente\": \"Aldo Carrillo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/cuentas/85635",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"cuentas",
+								"85635"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cunetas by numeroCuenta",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/cuentas/85635",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"cuentas",
+								"85635"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "Get Movimientos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/movimientos",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Movimientos by id",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/movimientos/1",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"movimientos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Movimientos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuenta\": {\r\n        \"numeroCuenta\": 496825   \r\n    },\r\n    \"tipoMovimiento\": \"Retiro\",\r\n    \"valor\": -540\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/movimientos",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Movimientos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cuenta\": {\r\n        \"numeroCuenta\": 225487   \r\n    },\r\n    \"tipoMovimiento\": \"Deposito\",\r\n    \"valor\": 600\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/movimientos/28",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"movimientos",
+								"28"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Movimientos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/movimientos/1",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"movimientos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Registro Movimientos",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{url}}:{{portCuentasMov}}/movimientos/reportes?fechaInicio={{fechaInicio}}&fechaFin={{fechaFin}}&cliente={{cliente}}",
+							"protocol": "http",
+							"host": [
+								"{{url}}"
+							],
+							"port": "{{portCuentasMov}}",
+							"path": [
+								"movimientos",
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "fechaInicio",
+									"value": "{{fechaInicio}}"
+								},
+								{
+									"key": "fechaFin",
+									"value": "{{fechaFin}}"
+								},
+								{
+									"key": "cliente",
+									"value": "{{cliente}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
